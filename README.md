@@ -1,1 +1,306 @@
-# Home
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopTees</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007BFF;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .product-section {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 5px;
+            display: inline-block;
+            width: 500px;
+            box-sizing: border-box;
+            background-color: white;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 1.1em;
+            color: #007BFF;
+        }
+
+        .testimonials-section {
+            background-color: #f9f9f9;
+            text-align: center-;
+            padding: 50px;
+        }
+
+        .testimonial {
+            flex: 0 0 30%;
+            max-width: 30%;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial .customer-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .testimonial p {
+            margin-bottom: 10px;
+        }
+
+        .testimonial h4 {
+            margin-bottom: 5px;
+        }
+
+        .newsletter-section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .newsletter h2 {
+            margin-bottom: 20px;
+        }
+
+        .newsletter p {
+            margin-bottom: 20px;
+        }
+
+        .newsletter form {
+            display: flex;
+            justify-content: center;
+        }
+
+        .newsletter input[type="email"] {
+            padding: 10px;
+            width: 300px;
+            margin-right: 10px;
+            border: 1px solid #3498db;
+            border-radius: 5px;
+        }
+
+        .newsletter input[type="email"]:focus {
+            outline: none;
+        }
+
+        .newsletter button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TopTees</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Sign In</a>
+        <a href="#">Sign Up</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="product-section">
+        <h2>Featured Products</h2>
+
+        <div class="product-card">
+            <img class="product-image" src="Union Pacific Railroad T-Shirt North American Railway Train Logo New Tee White.jpg" alt="Product 2">
+            <div class="product-info">
+                <div class="product-title">PALACE TRI RIPPED</div>
+                <div class="product-price">$34.99</div>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img class="product-image" src="Union Pacific Railroad T-Shirt North American Railway Train Logo New Tee White.jpg" alt="Product 2">
+            <div class="product-info">
+                <div class="product-title">PALACE TRI RIPPED</div>
+                <div class="product-price">$34.99</div>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img class="product-image" src="Union Pacific Railroad T-Shirt North American Railway Train Logo New Tee White.jpg" alt="Product 2">
+            <div class="product-info">
+                <div class="product-title">PALACE TRI RIPPED</div>
+                <div class="product-price">$34.99</div>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img class="product-image" src="Union Pacific Railroad T-Shirt North American Railway Train Logo New Tee White.jpg" alt="Product 2">
+            <div class="product-info">
+                <div class="product-title">PALACE TRI RIPPED</div>
+                <div class="product-price">$34.99</div>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img class="product-image" src="Union Pacific Railroad T-Shirt North American Railway Train Logo New Tee White.jpg" alt="Product 2">
+            <div class="product-info">
+                <div class="product-title">PALACE TRI RIPPED</div>
+                <div class="product-price">$34.99</div>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img class="product-image" src="Union Pacific Railroad T-Shirt North American Railway Train Logo New Tee White.jpg" alt="Product 2">
+            <div class="product-info">
+                <div class="product-title">PALACE TRI RIPPED</div>
+                <div class="product-price">$34.99</div>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img class="product-image" src="Union Pacific Railroad T-Shirt North American Railway Train Logo New Tee White.jpg" alt="Product 2">
+            <div class="product-info">
+                <div class="product-title">PALACE TRI RIPPED</div>
+                <div class="product-price">$34.99</div>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img class="product-image" src="Union Pacific Railroad T-Shirt North American Railway Train Logo New Tee White.jpg" alt="Product 2">
+            <div class="product-info">
+                <div class="product-title">PALACE TRI RIPPED</div>
+                <div class="product-price">$34.99</div>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img class="product-image" src="Union Pacific Railroad T-Shirt North American Railway Train Logo New Tee White.jpg" alt="Product 2">
+            <div class="product-info">
+                <div class="product-title">PALACE TRI RIPPED</div>
+                <div class="product-price">$34.99</div>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img class="product-image" src="Union Pacific Railroad T-Shirt North American Railway Train Logo New Tee White.jpg" alt="Product 2">
+            <div class="product-info">
+                <div class="product-title">PALACE TRI RIPPED</div>
+                <div class="product-price">$34.99</div>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Add more product cards as needed -->
+
+    </div>
+
+    <div class="testimonials-section">
+        <h2>What Our Customers Say</h2>
+
+        <div class="testimonials-list">
+            <div class="testimonial">
+                <img class="customer-image" src="customer1.jpg" alt="Customer 1">
+                <h4>Customer 1</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at volutpat nisl.</p>
+            </div>
+
+            <div class="testimonial">
+                <img class="customer-image" src="customer2.jpg" alt="Customer 2">
+                <h4>Customer 2</h4>
+                <p>Nullam vel facilisis justo. Fusce euismod, mauris vitae vehicula vestibulum.</p>
+            </div>
+
+            <!-- Add more testimonials as needed -->
+
+        </div>
+    </div>
+
+    <div class="newsletter-section">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay updated with our latest products and promotions.</p>
+
+        <form>
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2024 TopTees. All rights reserved.
+    </footer>
+
+    <script>
+        function addToCart(productId) {
+            // Add your JavaScript logic for adding the product to the cart here
+            alert('Product ' + productId + ' added to cart!');
+        }
+    </script>
+</body>
+</html>
